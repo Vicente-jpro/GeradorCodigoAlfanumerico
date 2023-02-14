@@ -15,9 +15,9 @@ public class GeradorCodigoAlfanumerico {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String letra = "65";
         
-        System.err.println(""+letra.);
+        
+        System.err.println(""+LetrasMaiusculasAlfabeto.);
     }
     
 }

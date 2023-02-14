@@ -42,5 +42,11 @@ public enum LetrasMinusculaAlfabeto {
         private LetrasMinusculaAlfabeto(Integer letra){
         this.letra = letra;
         }
+
+    public Integer getLetra() {
+        return letra;
+    }
+        
+        
     
 }
