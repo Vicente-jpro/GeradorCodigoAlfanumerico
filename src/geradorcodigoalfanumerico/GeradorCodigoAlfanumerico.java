@@ -21,11 +21,12 @@ public class GeradorCodigoAlfanumerico {
         CodigoAlfabeto codigoAlfabeto = new CodigoAlfabeto();
         codigoAlfabeto.cadastrarCodigo();
         List<Ascii> lista = codigoAlfabeto.getListaMinuscula();
-        
+     
+       
         for(Ascii elemento: lista){
-            System.out.println(elemento.getCodigo());
-        } 
-        
+            System.out.println(elemento.getLetra()+" - "+elemento.getCodigo());
+        }
+    
     }
     
 }

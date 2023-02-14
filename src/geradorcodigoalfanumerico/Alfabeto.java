@@ -20,13 +20,13 @@ public class Alfabeto {
         String[] letraMinusculas = new String[letras.length];
         
         for(int i = 0; i < letras.length; i++){
-            letraMinusculas[i] = letras[i].toLowerCase();
+            letraMinusculas[i] = this.letras[i].toLowerCase();
         }
         
         return letraMinusculas;
     }
     
     public int tamanho(){
-        return letras.length;
+        return this.letras.length;
     }
 }

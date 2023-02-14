@@ -20,10 +20,11 @@ public class CodigoAlfabeto {
     public CodigoAlfabeto(){
         this.ListaMaiuscula = new ArrayList<>();
         this.ListaMinuscula = new ArrayList<>();
+        this.alfabeto = new Alfabeto();
     }
 
     public void cadastrarCodigo(){
-        Integer codigo = 65;
+        int codigo = 65;
         for(int i = 0; i < alfabeto.tamanho(); i++){
             
             String letra = alfabeto.getMinusculo()[i];
@@ -40,18 +41,9 @@ public class CodigoAlfabeto {
         return ListaMaiuscula;
     }
 
-    public void setListaMaiuscula(List<Ascii> ListaMaiuscula) {
-        this.ListaMaiuscula = ListaMaiuscula;
-    }
-
     public List<Ascii> getListaMinuscula() {
         return ListaMinuscula;
     }
-
-    public void setListaMinuscula(List<Ascii> ListaMinuscula) {
-        this.ListaMinuscula = ListaMinuscula;
-    }
-    
     
     
         
