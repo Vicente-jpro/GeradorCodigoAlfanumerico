@@ -11,18 +11,18 @@ package geradorcodigoalfanumerico;
 public class Ascii {
     
     private String letra;
-    private String codigo;
+    private Integer codigo;
 
-    public Ascii(String letra, String codigo) {
+    public Ascii(String letra, Integer codigo) {
         this.letra = letra;
         this.codigo = codigo;
     }
     
-    public String getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
     
