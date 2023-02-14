@@ -4,6 +4,8 @@
  */
 package geradorcodigoalfanumerico;
 
+import java.util.List;
+
 /**
  *
  * @author vicente-simao
@@ -16,8 +18,14 @@ public class GeradorCodigoAlfanumerico {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        CodigoAlfabeto codigoAlfabeto = new CodigoAlfabeto();
+        codigoAlfabeto.cadastrarCodigo();
+        List<Ascii> lista = codigoAlfabeto.getListaMinuscula();
         
-        System.err.println(""+LetrasMaiusculasAlfabeto.);
+        for(Ascii elemento: lista){
+            System.out.println(elemento.getCodigo());
+        } 
+        
     }
     
 }

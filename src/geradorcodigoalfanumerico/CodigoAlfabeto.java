@@ -35,5 +35,24 @@ public class CodigoAlfabeto {
 
       
     }
+
+    public List<Ascii> getListaMaiuscula() {
+        return ListaMaiuscula;
+    }
+
+    public void setListaMaiuscula(List<Ascii> ListaMaiuscula) {
+        this.ListaMaiuscula = ListaMaiuscula;
+    }
+
+    public List<Ascii> getListaMinuscula() {
+        return ListaMinuscula;
+    }
+
+    public void setListaMinuscula(List<Ascii> ListaMinuscula) {
+        this.ListaMinuscula = ListaMinuscula;
+    }
+    
+    
+    
         
 }
