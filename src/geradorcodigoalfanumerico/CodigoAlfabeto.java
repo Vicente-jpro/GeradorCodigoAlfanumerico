@@ -12,39 +12,46 @@ import java.util.List;
  */
 public class CodigoAlfabeto {
     
-    private List<Ascii> ListaMaiuscula;
-    private List<Ascii> ListaMinuscula;
+    private List<Ascii> listaMaiuscula;
+    private List<Ascii> listaMinuscula;
     private Ascii ascii;
     private Alfabeto alfabeto; 
 
     public CodigoAlfabeto(){
-        this.ListaMaiuscula = new ArrayList<>();
-        this.ListaMinuscula = new ArrayList<>();
+        this.listaMaiuscula = new ArrayList<>();
+        this.listaMinuscula = new ArrayList<>();
         this.alfabeto = new Alfabeto();
     }
 
-    public void cadastrarCodigo(){
-        int codigo = 65;
-        for(int i = 0; i < alfabeto.tamanho(); i++){
-            
-            String letra = alfabeto.getMinusculo()[i];
-            ascii = new Ascii(letra, codigo);
-            ListaMinuscula.add(ascii);
-            codigo++;
-     
-        }
-
-      
-    }
-
     public List<Ascii> getListaMaiuscula() {
-        return ListaMaiuscula;
+        this.listaMaiuscula = cadastrar(65);
+        return listaMaiuscula;
     }
 
     public List<Ascii> getListaMinuscula() {
-        return ListaMinuscula;
+        this.listaMinuscula = cadastrar(97);
+        return listaMinuscula;
     }
     
-    
+
+    private List<Ascii> cadastrar(int codigoInicialAlfabeto){
+        
+        List<Ascii> lista = new ArrayList<>();
+        String letra = null;
+        
+        for(int i = 0; i < alfabeto.tamanho(); i++){
+            if (codigoInicialAlfabeto < 97)
+                letra = alfabeto.getMaiusculo()[i];
+            else
+                letra = alfabeto.getMinusculo()[i];
+            
+            ascii = new Ascii(letra, codigoInicialAlfabeto);
+            lista.add(ascii);
+            codigoInicialAlfabeto++;
+     
+        }
+        
+        return lista;
+    }    
         
 }

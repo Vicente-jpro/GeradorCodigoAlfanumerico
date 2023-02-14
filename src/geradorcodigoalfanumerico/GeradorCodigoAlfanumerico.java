@@ -19,8 +19,7 @@ public class GeradorCodigoAlfanumerico {
         // TODO code application logic here
         
         CodigoAlfabeto codigoAlfabeto = new CodigoAlfabeto();
-        codigoAlfabeto.cadastrarCodigo();
-        List<Ascii> lista = codigoAlfabeto.getListaMinuscula();
+        List<Ascii> lista = codigoAlfabeto.getListaMaiuscula();
      
        
         for(Ascii elemento: lista){
